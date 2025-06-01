@@ -3,18 +3,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>lipu pi jan Lakuse</title>
   <subtitle>toki mute lili pi ijo ante mute.</subtitle>
-  <link href="https://example.com/eleventy-base-blog/feed/feed.xml" rel="self" />
-  <link href="https://example.com/eleventy-base-blog/" />
+  <link href="https://example.com/lipu-pi-jan-Lakuse/feed/feed.xml" rel="self" />
+  <link href="https://example.com/lipu-pi-jan-Lakuse/" />
   <updated>2025-06-01T00:00:00Z</updated>
-  <id>https://example.com/eleventy-base-blog/</id>
+  <id>https://example.com/lipu-pi-jan-Lakuse/</id>
   <author>
     <name>jan Lakuse</name>
   </author>
   <entry>
     <title>ko sijelo en weka pi ken mama</title>
-    <link href="https://example.com/eleventy-base-blog/blog/lipu-004/" />
+    <link href="https://example.com/lipu-pi-jan-Lakuse/blog/lipu-004/" />
     <updated>2025-06-01T00:00:00Z</updated>
-    <id>https://example.com/eleventy-base-blog/blog/lipu-004/</id>
+    <id>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-004/</id>
     <content type="html">&lt;h2 id=&quot;mi-pi-tenpo-pini-en-mi-pi-tenpo-ni&quot;&gt;mi pi tenpo pini en mi pi tenpo ni&lt;/h2&gt;
 &lt;p&gt;tenpo poka la mi lukin e sitelen tawa wan mi pi ilo Jutu. sitelen tawa li tan tenpo pini. mi lukin e sijelo mi. pilin li nasa.&lt;/p&gt;
 &lt;p&gt;sitelen tawa la sijelo mi li lili lili lili a.&lt;/p&gt;
@@ -71,9 +71,9 @@
   </entry>
   <entry>
     <title>kalama lili suwi mu pi kama lape</title>
-    <link href="https://example.com/eleventy-base-blog/blog/lipu-003/" />
+    <link href="https://example.com/lipu-pi-jan-Lakuse/blog/lipu-003/" />
     <updated>2025-05-31T00:00:00Z</updated>
-    <id>https://example.com/eleventy-base-blog/blog/lipu-003/</id>
+    <id>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-003/</id>
     <content type="html">&lt;h2 id=&quot;ni-li-seme&quot;&gt;ni li seme?&lt;/h2&gt;
 &lt;p&gt;&amp;quot;kalama lili wawa suwi mu pi kama lape.&amp;quot; tan toki ni taso la sina ken ala ken sona e ijo pi toki mi?&lt;/p&gt;
 &lt;p&gt;sona ala la mi o pana e sona mute.&lt;/p&gt;
@@ -119,9 +119,9 @@ o pana e olin lon poka sina&lt;/p&gt;
   </entry>
   <entry>
     <title>mi kama toki Epelanto lon ma Towano</title>
-    <link href="https://example.com/eleventy-base-blog/blog/lipu-002/" />
+    <link href="https://example.com/lipu-pi-jan-Lakuse/blog/lipu-002/" />
     <updated>2025-05-31T00:00:00Z</updated>
-    <id>https://example.com/eleventy-base-blog/blog/lipu-002/</id>
+    <id>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-002/</id>
     <content type="html">&lt;h2 id=&quot;open&quot;&gt;open&lt;/h2&gt;
 &lt;p&gt;lon tenpo mun kama nanpa tu la tenpo kulupu suli pi toki Epelanto li kama lon ma lili Towano (Toronto). mi tawa ona li pilin wawa.&lt;/p&gt;
 &lt;p&gt;mi pilin wawa tan ni: mi wile ala pana e mani mute. kulupu &#39;kulupu pi toki Epelanto pi kulupu Kanata&#39; (&lt;span lang=&quot;eo&quot;&gt;Kanada Esperanto Asocio&lt;/span&gt;) en kulupu &#39;kulupu pi kama sona pi toki Epelanto&#39; (&lt;span lang=&quot;en&quot;&gt;Esperantic Studies Foundation&lt;/span&gt;) li pana e mani tawa kama mi. lon la ni li wawa mute tawa mi a. kulupu pi toki Epelanto li jo e wawa e lawa e mani.&lt;/p&gt;
@@ -136,7 +136,7 @@ o pana e olin lon poka sina&lt;/p&gt;
 &lt;p&gt;kulupu pi ma Sikako la mi kama ala sona e ni: nasin seme li ken pona.&lt;/p&gt;
 &lt;p&gt;kin la mi kama ala sona e ni: nasin seme la kulupu pi toki pona la kepeken mani li ken seme.&lt;/p&gt;
 &lt;h3 id=&quot;lipu-tenpo&quot;&gt;lipu tenpo&lt;/h3&gt;
-&lt;p&gt;sina lukin ala lukin e ni: tenpo poka la, kulupu pali pi &amp;quot;&lt;a href=&quot;https://example.com/eleventy-base-blog/blog/lipu-002/&quot;&gt;lipu tenpo&lt;/a&gt;&amp;quot; li toki ni:&lt;/p&gt;
+&lt;p&gt;sina lukin ala lukin e ni: tenpo poka la, kulupu pali pi &amp;quot;&lt;a href=&quot;https://example.com/lipu-pi-jan-Lakuse/blog/lipu-002/&quot;&gt;lipu tenpo&lt;/a&gt;&amp;quot; li toki ni:&lt;/p&gt;
 &lt;p&gt;lipu tenpo li jo e mani li wile sona e nasin pona kepeken. tawa ni la kulupu pali li alasa e pilin tan jan mute li toki sama ni: mani o tawa ijo seme? ijo sin seme pi toki pona o kama lon?&lt;/p&gt;
 &lt;p&gt;toki pi lipu tenpo la mi pilin wawa. ni li open. mi wile sona e ni: kulupu la mani pi lipu tenpo o tawa ijo seme. kin la mi wile sona: mani li tawa tan lipu tenpo tawa ijo la, seme li kama a? nasin li seme?&lt;/p&gt;
 &lt;p&gt;kulupu pi toki pona la pali jan mute mute mute mute li kama ala e mani. tenpo mute la pali ni li weka e tenpo li weka e mani tan esun pi ijo wile.&lt;/p&gt;
@@ -164,9 +164,9 @@ mi sona e jan mute ni: ona li open lon toki Epelanto la ona li kama toki pona ki
   </entry>
   <entry>
     <title>lipu sin li open</title>
-    <link href="https://example.com/eleventy-base-blog/blog/lipu-001/" />
+    <link href="https://example.com/lipu-pi-jan-Lakuse/blog/lipu-001/" />
     <updated>2025-05-31T00:00:00Z</updated>
-    <id>https://example.com/eleventy-base-blog/blog/lipu-001/</id>
+    <id>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-001/</id>
     <content type="html">&lt;h2 id=&quot;kama-pi-lipu-ni&quot;&gt;kama pi lipu ni&lt;/h2&gt;
 &lt;p&gt;mi wile ken pana taso e lipu kepeken toki pona kepeken tenpo lili.&lt;/p&gt;
 &lt;p&gt;mi wile ala e ni: pali lipu li kepeken tenpo suli.&lt;/p&gt;
