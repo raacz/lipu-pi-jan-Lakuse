@@ -62,7 +62,7 @@ export default async function(eleventyConfig) {
 		stylesheet: "pretty-atom-feed.xsl",
 		templateData: {
 			eleventyNavigation: {
-				key: "Feed",
+				key: "nasin pana",
 				order: 4
 			}
 		},
@@ -72,11 +72,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
+			title: "lipu pi jan Lakuse",
+			subtitle: "toki mute lili pi ijo ante mute.",
 			base: "https://example.com/",
 			author: {
-				name: "Your Name"
+				name: "jan Lakuse"
 			}
 		}
 	});

@@ -220,11 +220,9 @@ header {
 .nav-item {
 	display: inline-block;
 }
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
+
 .nav a[href][aria-current="page"] {
-	text-decoration: underline;
+	font-weight: 800;
 }
 
 /* Posts list */
@@ -276,7 +274,6 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
 	font-style: italic;
 }
 .postlist-item > .post-tag {

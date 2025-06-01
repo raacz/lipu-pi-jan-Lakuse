@@ -16,7 +16,7 @@ https://nicolas-hoizey.com/feeds/all.xml
                 xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:template match="/">
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
       <head>
         <title><xsl:value-of select="atom:feed/atom:title"/></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -73,7 +73,7 @@ https://nicolas-hoizey.com/feeds/all.xml
   </xsl:template>
   <xsl:template match="atom:feed/atom:entry">
     <div class="pb-5">
-      <h3 class="mb-0">
+      <h3 lang="tok" class="mb-0">
         <a>
           <xsl:attribute name="href">
             <xsl:value-of select="atom:link/@href"/>
