@@ -6,6 +6,9 @@ layout: layouts/base.njk
 <style>{% include "css/prism-diff.css" %}</style>
 <h1>{{ title }}</h1>
 
+
+
+
 <ul class="post-metadata">
 	<li lang="en"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}
@@ -13,6 +16,15 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
+
+{%- if audio %}
+<audio tabindex="0" aria-label="o kute e lipu" controls="controls">
+  <source type="audio/mp3" src="{{ audio }}"></source>
+</audio>
+{%- endif %}
+
+
+<hr>
 
 {{ content | safe }}
 

@@ -23,13 +23,13 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
+		--color-gray-50: #e6bcbc;
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link: #a7b9c7;
+		--text-color-link-active: #d0d0f3;
+		--text-color-link-visited: #afafe6;
 
 		--background-color: #15202b;
 	}
@@ -112,6 +112,11 @@ a[href]:visited {
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
+}
+
+audio {
+	margin-block: 2em;
+	display: block;
 }
 
 main,

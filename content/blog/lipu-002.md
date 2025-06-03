@@ -72,7 +72,7 @@ mi pilin pona tan ni: mi ken tawa ma Towano li ken kama sona e toki Epelanto lon
 
 sona mi la jan tu wan ante li kama a! kin la jan Sonja li kama lon li kama toki tawa kulupu e pali ona pi toki pona a. 
 
-taso, jan pi toki pona li lon la mi wile ala kepeken nasin ni: lon tenpo pi toki Epelanto la mi toki mute kepeken toki Epelanto ala li kepeken toki pona a. mi wile a wawa e ken mi pi toki Epelanto. mi wawa e ken mi pi toki Epelanto la mi pilin e ni: mi ken kama lon sona pona e jan pi toki Epelanto li ken sona e musi ona e pilin ona e nasin ona e wile ona. 
+taso, jan pi toki pona li lon la mi wile ala kepeken nasin ni: lon tenpo pi toki Epelanto la mi toki mute kepeken toki Epelanto ala li kepeken toki pona a. mi wile a wawa e ken mi pi toki Epelanto. mi wawa e ken mi pi toki Epelanto la mi pilin e ni: mi ken kama sona pona e jan pi toki Epelanto li ken sona e musi ona e pilin ona e nasin ona e wile ona. 
 
 nasin mute la jan mute pi toki Epelanto en jan mute pi toki pona li sama. mi ale li kama sona e toki pi ma ala e toki sin tan musi taso.
  

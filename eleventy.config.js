@@ -5,9 +5,11 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
+import { any } from "zod";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	eleventyConfig.addPassthroughCopy("content/**/**/*.mp3");
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
@@ -71,7 +73,7 @@ export default async function(eleventyConfig) {
 			limit: 10,
 		},
 		metadata: {
-			language: "en",
+			language: "tok",
 			title: "lipu pi jan Lakuse",
 			subtitle: "toki mute lili pi ijo ante mute.",
 			base: "https://example.com/",
