@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="tok">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>len lawa sin pi weka suno</title>
+		<meta name="description" content=".">
+		<link rel="alternate" href="/lipu-pi-jan-Lakuse/feed/feed.xml" type="application/atom+xml" title="lipu pi jan Lakuse">
+
+		<meta name="generator" content="Eleventy v3.1.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #e6bcbc;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #a7b9c7;
+		--text-color-link-active: #d0d0f3;
+		--text-color-link-visited: #afafe6;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+audio {
+	margin-block: 2em;
+	display: block;
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+
+.nav a[href][aria-current="page"] {
+	font-weight: 800;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">o tawa toki</a>
+
+		<header>
+			<a href="/lipu-pi-jan-Lakuse/" class="home-link">lipu pi jan Lakuse</a>
+			<nav>
+				<ul class="nav">
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/">open</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/blog/">lipu ale</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/about/">mi</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/feed/feed.xml">nasin pana</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<heading-anchors>
+				
+
+
+<h1 id="len-lawa-sin-pi-weka-suno">len lawa sin pi weka suno</h1>
+
+
+
+
+<ul class="post-metadata">
+	<li lang="en"><time datetime="2025-06-02">02 June 2025</time></li>
+	<li><a href="/lipu-pi-jan-Lakuse/tags/nasin-mi/" class="post-tag">nasin mi</a>, </li>
+	<li><a href="/lipu-pi-jan-Lakuse/tags/ma/" class="post-tag"> ma</a>, </li>
+	<li><a href="/lipu-pi-jan-Lakuse/tags/len/" class="post-tag"> len</a></li>
+</ul>
+
+
+<hr>
+
+<h2 id="mi-esun-e-len-sin">mi esun e len sin</h2>
+<p>mi esun e len ni tan kulupu esun pi ma Sonko. lon ona la sina ken esun e ijo mute kepeken mani lili a. mi sona e ni: nasin esun ni li ike. ona li ike tan ijo ante mute. ken suli la nasin pali len li pona ala; ken suli la jan pali li kama ala jo e mani pi mute pona. ken suli la nasin pali li ike mute e ma.</p>
+<p>taso mi jo ala e mani mute lon tenpo ni. tan ni la mi esun e len.</p>
+<p>mi la pakala suli wan li lon nasin esun ni: mani li lili mute la jan li esun e ijo mute pi wile ala li kepeken ala ijo ni. mi kepeken esun ni la mi lukin esun e ijo ni taso: mi kama kepeken lon tenpo suno ale.</p>
+<p>lon la len ni la mi kepeken lon tenpo mute mute mute. mi o toki e len. tan seme la len ni li pona sewi a tawa mi?</p>
+<h2 id="selo-len">selo len</h2>
+<p>len li sike lipu. mi pana e ona tawa lawa mi la linja li lon len li tan kute wan tawa kute ante. mi ken kepeken linja tawa ni: len li awen pona lon lawa mi li ken ala weka.</p>
+<p>linja ni li pona ale. o sona: tenpo mute la mi pali mani lon ma. mi pali mani lon poka pi nasin ni: tomo suli mute li tawa kepeken wawa mute. mi wile ala a e ni: ma li pana e kon wawa la len li kama weka tan lawa mi la ona li tawa insa nasin la mi alasa e ona la mi kama moli.</p>
+<p>kama moli li ike! linja awen pi len lawa sin mi li pona mute.</p>
+<p>kin la, mi o toki e kule. kule li pona wawa a tawa mi! mi kepeken kule ni la mi pilin pona. kule pi len lawa li sama kule pi len noka mi pona. mi pilin pona tan kule ona a!</p>
+<h2 id="len-lawa-li-ken-kama-poki-pi-ona-sama">len lawa li ken kama poki pi ona sama</h2>
+<p>len li ken pali e ijo pi wawa mute. insa sike pi len sike lipu la lipu nanpa tu li lon li pali e poki lili. mi ken pana e ale selo len tawa insa pi poki lili ni, li ken pini e poki kepeken kiwen lili</p>
+<p>len lawa li kama poki la ona li jo e linja jo lili. wawa mute a!</p>
+<h2 id="lon-la-mi-kepeken-lon-tenpo-suno-ale">lon la mi kepeken lon tenpo suno ale</h2>
+<p>len li pana e pilin pona a tawa mi. len li awen e lawa mi tan pana suno. len li awen pona lon lawa mi, li kule pona. ona li ken kama poki pi ona sama la mi wile jo e ona lon poka mi la mi wile ala pali suli. len pona a!</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">o tawa lipu pini<br> <a href="/lipu-pi-jan-Lakuse/blog/lipu-005/">ilo pi sike tu</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+		<hr>
+		
+
+		<footer>
+			<p><em>ilo lipu li kepeken <a href="https://www.11ty.dev/">ilo Elewensi (<span lang="en">Eleventy v3.1.0</span>)</a>. <br>toki lipu li pana kepeken <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">nasin <span lang="en">CC-BY-SA 4.0</span></a></em></p>
+		</footer>
+
+		<!-- This page `/blog/lipu-006/` was built on 2025-06-03T02:40:53.596Z -->
+		<script type="module" src="/lipu-pi-jan-Lakuse/dist/xbxy_EL6cU.js"></script>
+	</body>
+</html>
