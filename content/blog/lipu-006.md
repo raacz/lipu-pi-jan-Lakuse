@@ -1,6 +1,6 @@
 ---
 title: len lawa sin pi weka suno
-description: "."
+description: "mi esun e len lawa sin lon tenpo poka. ona li pona sewi tawa mi la mi wile toki e ona."
 date: 2025-06-02
 tags: nasin mi, ma, len
 ---
