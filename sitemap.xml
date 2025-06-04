@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-002/</loc>
-		<lastmod>2025-05-31</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-003/</loc>
-		<lastmod>2025-05-31</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_001/lipu-001/</loc>
 		<lastmod>2025-05-31</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-004/</loc>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_002/lipu-002/</loc>
+		<lastmod>2025-05-31</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_003/lipu-003/</loc>
+		<lastmod>2025-05-31</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_004/lipu-004/</loc>
 		<lastmod>2025-06-01</lastmod>
 	</url>
 	
@@ -33,26 +33,26 @@
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/about/</loc>
-		<lastmod>2025-06-03</lastmod>
+		<lastmod>2025-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/</loc>
-		<lastmod>2025-06-03</lastmod>
+		<lastmod>2025-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/</loc>
-		<lastmod>2025-06-03</lastmod>
+		<lastmod>2025-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/tags/</loc>
-		<lastmod>2025-06-03</lastmod>
+		<lastmod>2025-06-04</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/feed/feed.xml</loc>
-		<lastmod>2025-06-03</lastmod>
+		<lastmod>2025-06-04</lastmod>
 	</url>
 </urlset>

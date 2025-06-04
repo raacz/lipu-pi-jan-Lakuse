@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="tok">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ko sijelo en weka pi ken mama</title>
+		<meta name="description" content="sijelo mi li kama ante tan weka pi ken mama. lipu ni la mi toki e nasin pi ni ale.">
+		<link rel="alternate" href="/lipu-pi-jan-Lakuse/feed/feed.xml" type="application/atom+xml" title="lipu pi jan Lakuse">
+
+		<meta name="generator" content="Eleventy v3.1.0">
+		
+		
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #e6bcbc;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #a7b9c7;
+		--text-color-link-active: #d0d0f3;
+		--text-color-link-visited: #afafe6;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+audio {
+	margin-block: 2em;
+	display: block;
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+#skip-link {
+	text-decoration: none;
+	background: var(--background-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--color-gray-90);
+	border-radius: 2px;
+}
+
+/* Prevent visually-hidden skip link fom pushing content around when focused */
+#skip-link.visually-hidden:focus {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	/* Ensure it is positioned on top of everything else when it is shown */
+	z-index: 999;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+
+.nav a[href][aria-current="page"] {
+	font-weight: 800;
+}
+
+/* Posts list */
+.postlist {
+	counter-reset: start-from var(--postlist-index);
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}</style>
+		
+	</head>
+	<body>
+		<a href="#main" id="skip-link" class="visually-hidden">o tawa toki</a>
+
+		<header>
+			<a href="/lipu-pi-jan-Lakuse/" class="home-link">lipu pi jan Lakuse</a>
+			<nav>
+				<ul class="nav">
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/">open</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/blog/">lipu ale</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/about/">mi</a></li>
+					<li class="nav-item"><a href="/lipu-pi-jan-Lakuse/feed/feed.xml">nasin pana</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<heading-anchors>
+				
+
+
+<h1 id="ko-sijelo-en-weka-pi-ken-mama">ko sijelo en weka pi ken mama</h1>
+
+
+
+
+<ul class="post-metadata">
+	<li lang="en"><time datetime="2025-06-01">01 June 2025</time></li>
+	<li><a href="/lipu-pi-jan-Lakuse/tags/nasin-mi/" class="post-tag">nasin mi</a>, </li>
+	<li><a href="/lipu-pi-jan-Lakuse/tags/sijelo/" class="post-tag"> sijelo</a></li>
+</ul>
+<audio tabindex="0" aria-label="o kute e lipu" controls="controls">
+  <source type="audio/mp3" src="/lipu-pi-jan-Lakuse/blog/lipu_004/ko-sijelo-en-weka-pi-ken-mama_001.mp3">
+</audio>
+
+
+<hr>
+
+<h2 id="mi-pi-tenpo-pini-en-mi-pi-tenpo-ni">mi pi tenpo pini en mi pi tenpo ni</h2>
+<p>tenpo poka la mi lukin e sitelen tawa wan mi pi ilo Jutu. sitelen tawa li tan tenpo pini. mi lukin e sijelo mi. pilin li nasa.</p>
+<p>sitelen tawa la sijelo mi li lili lili lili a.</p>
+<p>tenpo pini la ko pi sijelo mi li mute lili ike a. mi jan lili la sijelo mi li lili mute. ike suli pana sijelo li kama lon ma ale li pini e pali mute la mi o awen lon tomo mi la wile moku mi li kama lili mute. ni la sijelo mi li kama lili mute sin.</p>
+<p>sijelo li lili mute a tan pilin ike. pilin ike la mi wile ala tawa. mi lukin ala lili e sijelo mi. taso sijelo mi li kama lili li kama lili li kama lili. ko li ala a. mi kiwen taso.</p>
+<p>mi pi kiwen taso li wawa lili li ken ala a pali mute.</p>
+<p>mi pi kiwen taso li pilin moli.</p>
+<p>taso tenpo lon la ale li ante. ko mute pona li lon sijelo mi. mi pilin pona tan ni li pilin nasa lili kin.</p>
+<p>lipu ni la mi wile toki e ni: ijo seme li ko e sijelo mi?</p>
+<h2 id="mi-wile-ala-kama-mama">mi wile ala kama mama</h2>
+<p>taso awen la mi wile unpa. sijelo mi li ken kama tomo pi jan lili. mi wile weka e ken ni la nasin mute li lon.</p>
+<h3 id="ken-w-o-moku-e-sike-lili-lon-tenpo-suno-ale">ken #W: o moku e sike lili lon tenpo suno ale</h3>
+<p>jan mute li kepeken nasin ni: tenpo suno ale la ona li moku e kiwen sike lili. kiwen li toki tawa sijelo e ni: tenpo mama li lon ala! o lukin ala open e ken mama!</p>
+<p><strong>taso nasin ni la pakala tu li lon tawa mi:</strong></p>
+<ul>
+<li>nanpa wan la, mi ken ala moku e kiwen sike lili lon tenpo suno ale. mi jan pi nasin ala. mi ken ala nasin e mi lon pali sama lon tenpo suno ale. jan li kama ala moku e kiwen sike lili lon tenpo wan taso la la, ken mama li ken kama sin. ni li ike mute. nasin ni li ken ala a pana e pona tawa mi.</li>
+<li>nanpa tu la, jan o esun e kiwen sike lili ni lon tenpo mun ale. tenpo ni la kulupu esun suli li pana e mani tawa pona pi sijelo mi. ni la mi wile ala pana e mani mute. taso, tenpo kama poka la mi pini e tomo sona la kulupu esun suli ni li pini e pana mani. tenpo ni la mi ken pana e mani, taso tenpo kama la mi ken ala pana e mani. mi wile ala e nasin pi tenpo lili. mi wile e nasin pi tenpo suli.</li>
+</ul>
+<h3 id="ken-t-o-pini-e-nasin-mama-kepeken-palisa-kiwen">ken #T: o pini e nasin mama kepeken palisa kiwen</h3>
+<p>jan mute li pilin sama mi li wile ala moku e sike lili lon tenpo ale li wile ala pana e mani lon tenpo mun ale. ni la, nasin pi palisa kiwen li ken pona mute.</p>
+<p>nasin pali pi jan lili li ni: palisa unpa li pana e ko tawa lupa unpa. lon insa ko la ijo mute lili tawa li lon li kama lon lupa li alasa e poki mama. ona li ken kama lon poki mama kepeken nasin. taso nasin ni li pini la ijo lili tawa en poki mama li ken ala kama wan. palisa kiwen a li ken pini e nasin tawa pi poki mama.</p>
+<p>lon la palisa kiwen la nasin tu li lon:</p>
+<ul>
+<li>nasin nanpa wan la palisa kiwen li palisa taso a.</li>
+<li>nasin nanpa tu la palisa kiwen li jo e telo toki wawa li ken toki tawa sijelo e ni: tenpo mama li lon ala! o lukin ala open e ken mama!</li>
+</ul>
+<p>palisa kiwen la jan sona sijelo pi nasin mama li open e noka tu sina li open e lupa sina li pana wawa a e palisa kiwen tawa insa lupa tawa monsi lupa tawa lupa lili pi insa lupa (ni li nasin tawa pi poki mama). jan mute li toki e ni: pana pi palisa kiwen li pilin ike suli.</p>
+<p>taso palisa li lon insa la ona li ken awen lon tenpo sike mute. sina wile weka e pali kiwen la jan sona o utala sin e lupa sina o kama e pilin ike. taso ken mama li weka. kin la, ale la mani wile li suli mute ala.</p>
+<p><strong>mi toki insa mute la mi kama sona e ni: mi pilin monsuta a tan pilin ike ken pi pana palisa.</strong> tan ni la mi wile alasa e ni: seme ante a li ken li ken pona lon tenpo suli. ijo ante li lon ala lon?</p>
+<h3 id="ken-tw-palisa-lili-li-lon-insa-pi-selo-luka">ken #TW: palisa lili li lon insa pi selo luka</h3>
+<p>nasin li ni: jan sona li kipisi lili e selo luka li pana lon insa e poki lili palisa. poki li jo e telo toki mute. lon tenpo sike tu wan la poki li ken pana e telo toki tawa sijelo. telo toki li ken toki tawa sijelo e ni: o mama ala!</p>
+<p>mi kama kepeken nasin ni. nasin li pona mute tawa mi. tenpo pali pi palisa lili li suli. mani wile li suli ala. pilin ike li lon ala tenpo pana.</p>
+<p>taso, a! telo toki li toki e ijo mute tawa sijelo la sijelo li kama ante lon nasin ante mute.</p>
+<h2 id="pali-li-weka-mama-taso-ala">pali li weka mama taso ala</h2>
+<p>telo toki li lon sijelo mi tan poki palisa lili la sijelo mi li kama ante seme?</p>
+<h3 id="pana-pi-telo-loje-li-pini">pana pi telo loje li pini</h3>
+<p>tenpo pini la sijelo mi li pana e telo loje lon tenpo mun ale. ni li nasin ona li nasa ala. taso tan poki palisa lili la pana telo ni sike li kama weka ale.</p>
+<p>pana pi telo loje li ike tawa mi, li pana e pilin pakala lon insa mi li kama e ni: mi o lape mute li ken ala pali mute. ni la, pana pi telo loje li lon ala la mi pilin pona. mi pilin pona tan ijo ante kin: mi tonsi. pana pi telo loje li pana e pilin nasa meli pi pona ala. a, weka pi telo loje li pona mute tawa tonsi mi!</p>
+<h3 id="nena-sinpin-mi-li-kama-suli">nena sinpin mi li kama suli</h3>
+<p>taso a. seme li pona ala tawa tonsi mi? nena sinpin mi li kama suli. tenpo pini la sina lukin e sinpin mi la sina ken a pilin e ni: nena ala li lon.</p>
+<p>taso tenpo ni la nena li lon. ni li pona mute ala tawa mi.</p>
+<p>pali ni taso pi telo toki li ike mute tawa mi.</p>
+<h3 id="wile-moku-mi-li-kama-suli">wile moku mi li kama suli</h3>
+<p>tenpo pini la wile moku mi li lili mute lon tenpo ale. mi ken ala moku mute. mi moku la mi kama pilin e ni kepeken tenpo lili: mi wile ala awen moku.</p>
+<p>taso telo toki li suli e wile moku mi. tenpo lon la mi pilin ala sama ni: a, mi wile ala a moku. tenpo ale la mi ken pilin e wile moku lili. tan ni la mute pi moku mi li kama suli tan tenpo pini.</p>
+<h3 id="ni-la-sijelo-mi-li-kama-suli-ko-pona">ni la sijelo mi li kama suli ko pona.</h3>
+<p>mi pilin sama ni: sijelo mi li kiwen taso ala! ko pona a, telo toki pona a!</p>
+<h2 id="sina-wile-weka-e-ken-mama-sina-kepeken-telo-toki-la-o-sona-pona">sina wile weka e ken mama sina kepeken telo toki la o sona pona</h2>
+<p>telo toki li pona mute tawa mi (li ike tawa mi lon nasin suli wan).</p>
+<p>tenpo pini la mi sona ala e ni: telo toki li ken suli e nena tu sinpin mi. mi sona la ken suli la mi kepeken palisa kiwen pi telo toki ala.</p>
+<p>taso pona kin li ken lon. mi la weka pi telo loje en kama pi ko sijelo li pona mute! ona li pona tawa mi, taso ona li ken ike tawa sina.</p>
+<p>o alasa mute mute mute mute a e sona.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">o tawa lipu pini<br> <a href="/lipu-pi-jan-Lakuse/blog/lipu_003/lipu-003/">kalama lili suwi mu pi kama lape</a></li><li class="links-nextprev-next">o tawa lipu kama<br><a href="/lipu-pi-jan-Lakuse/blog/lipu-005/">ilo pi sike tu</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+		<hr>
+		
+
+		<footer>
+			<p><em>ilo lipu li kepeken <a href="https://www.11ty.dev/">ilo Elewensi (<span lang="en">Eleventy v3.1.0</span>)</a>. <br>toki lipu li pana kepeken <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">nasin <span lang="en">CC-BY-SA 4.0</span></a></em></p>
+		</footer>
+
+		<!-- This page `/blog/lipu_004/lipu-004/` was built on 2025-06-04T01:34:57.799Z -->
+		<script type="module" src="/lipu-pi-jan-Lakuse/dist/xbxy_EL6cU.js"></script>
+	</body>
+</html>
