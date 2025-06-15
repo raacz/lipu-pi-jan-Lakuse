@@ -22,37 +22,47 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-005/</loc>
-		<lastmod>2025-06-02</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu-006/</loc>
 		<lastmod>2025-06-02</lastmod>
 	</url>
 	
 	<url>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_005/lipu-005/</loc>
+		<lastmod>2025-06-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_007/lipu-007/</loc>
+		<lastmod>2025-06-14</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/lipu_008/lipu-008/</loc>
+		<lastmod>2025-06-14</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/about/</loc>
-		<lastmod>2025-06-04</lastmod>
+		<lastmod>2025-06-15</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/blog/</loc>
-		<lastmod>2025-06-04</lastmod>
+		<lastmod>2025-06-15</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/</loc>
-		<lastmod>2025-06-04</lastmod>
+		<lastmod>2025-06-15</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/tags/</loc>
-		<lastmod>2025-06-04</lastmod>
+		<lastmod>2025-06-15</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/lipu-pi-jan-Lakuse/feed/feed.xml</loc>
-		<lastmod>2025-06-04</lastmod>
+		<lastmod>2025-06-15</lastmod>
 	</url>
 </urlset>
