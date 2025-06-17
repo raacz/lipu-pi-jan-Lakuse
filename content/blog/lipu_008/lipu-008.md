@@ -2,7 +2,8 @@
 title: mama mije pi mama meli mi
 description: "lon tenpo suno musi pi mama mije, la mi toki lili tawa jan pi toki ala: mama mije pi mama meli mi."
 date: 2025-06-14
-tags: nasin mi
+tags: nasin mi, kulupu mama
+audio: '/blog/lipu_008/mama-mije-pi-mama-meli-mi_001.mp3'
 ---
 
 ## toki
@@ -29,7 +30,7 @@ sina wile pona.
 
 tenpo wan la, mama meli lili mi li toki tawa sina e ni: jan li seli e palisa pi kon pimeja la ni li sama seme? mama meli mi li lili. sina pana tawa ona e palisa pi kon pimeja. ona li moku li pilin e jaki. ona li moku ni wan taso li moku sin ala lon ale pi tenpo ona. 
 
-tenpo wan la, mama meli mi li lawa e tomo tawa. sina lon poka ona. tan ala la tomo tawa ante li kama pi tawa monsi li utala e tomo tawa. tomo tawa li pakala. taso sina kalama suli ala. sina toki utala tawa mama meli mi. 
+tenpo wan la, mama meli mi li lawa e tomo tawa. sina lon poka ona. tan ala la tomo tawa ante li kama pi tawa monsi li utala e tomo tawa. tomo tawa li pakala. taso sina kalama suli ala. sina toki utala ala tawa mama meli mi. 
 
 ## weka
 

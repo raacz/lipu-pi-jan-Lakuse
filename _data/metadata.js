@@ -1,6 +1,6 @@
 export default {
 	title: "lipu pi jan Lakuse",
-	url: "https://example.com/",
+	url: "https://raacz.github.io/lipu-pi-jan-Lakuse/",
 	language: "tok",
 	description: "jan Lakuse li toki e ijo ante mute kepeken toki pona.",
 	author: {

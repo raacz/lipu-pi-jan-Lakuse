@@ -2,7 +2,9 @@
 title: moli ala pi jan lili Wilonsa
 description: "mi toki e ijo pi kulupu mama mi e nasin esun pona pi ilo sijelo."
 date: 2025-06-14
-tags: jan, sijelo
+tags: jan, sijelo, kulupu mama
+audio: "/blog/lipu_007/moli-ala-pi-jan-lili-Wilonsa_001.mp3"
+
 ---
 
 

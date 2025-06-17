@@ -4,7 +4,6 @@ description: "tenpo poka la mi kama kepeken ilo pi sike tu lon tenpo mute. ni li
 date: 2025-06-02
 tags: nasin mi, sijelo, ma
 audio: "/blog/lipu_005/ilo-pi-sike-tu.mp3"
-
 ---
 
 ## tenpo poka
